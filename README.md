@@ -1,4 +1,4 @@
-# 📘 Mini CRM Application
+# Mini CRM Application
 
 A lightweight, mobile-responsive **Customer Relationship Management (CRM)** web app built with **React + Tailwind CSS + Zustand**. It allows users to manage clients, leads, tasks, and notes with a simple and modern UI.
 
@@ -31,7 +31,7 @@ A lightweight, mobile-responsive **Customer Relationship Management (CRM)** web 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/mryums/mini-crm.git
+git clone https://github.com/mryums/CRM
 cd mini-crm
 ```
 2. Install Dependencies
