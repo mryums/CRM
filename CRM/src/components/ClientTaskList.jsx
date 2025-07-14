@@ -24,7 +24,7 @@ export default function ClientTaskList({ clientId }) {
     <div className="bg-white p-6 rounded-lg shadow-sm border border-border-color">
       <h3 className="text-xl font-bold mb-4 text-text-main">Tasks</h3>
 
-      <div className="flex gap-2 mb-4">
+      <div className="flex flex-wrap gap-2 mt-4">
         <input
           type="text"
           placeholder="New task..."
