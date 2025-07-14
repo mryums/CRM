@@ -31,7 +31,7 @@ A lightweight, mobile-responsive **Customer Relationship Management (CRM)** web 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/mryums/CRM
+git clone https://github.com/mryums/CRM.git
 cd mini-crm
 ```
 2. Install Dependencies
@@ -40,6 +40,7 @@ npm install
 4. Start Development Server
 npm run dev
 
+```bash
 src/
 ├── app/                # App pages (clients, tasks, leads)
 ├── components/         # UI components (sidebar, modals, toggle, etc.)
@@ -47,6 +48,7 @@ src/
 ├── data/               # Dummy client data
 ├── App.jsx             # Main layout and routing
 ├── index.css           # Tailwind setup
+```
 
 
 Built with ❤️ by MARYAM
