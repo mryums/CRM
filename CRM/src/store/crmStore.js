@@ -89,6 +89,27 @@ export const useCrmStore = create(
           };
         }),
 
+deleteClient: (clientId) =>
+  set((state) => {
+    const updatedClients = { ...state.clients };
+    delete updatedClients[clientId];
+
+    // Remove clientId from all columns in pipeline
+    const updatedPipeline = { ...state.pipeline };
+    for (const colId in updatedPipeline) {
+      updatedPipeline[colId] = {
+        ...updatedPipeline[colId],
+        itemIds: updatedPipeline[colId].itemIds.filter((id) => id !== clientId),
+      };
+    }
+
+    return {
+      clients: updatedClients,
+      pipeline: updatedPipeline,
+    };
+  }),
+
+
       // --- NOTES ---
       addNoteToClient: (clientId, note) =>
         set((state) => {
